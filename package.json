@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Paruošti komentarų formą su galimybe saugoti įrašus į tekstinį failą ir juos peržiūrėti.",
+  "scripts": {
+    "start": "concurrently \"webpack --config webpack.config.js\" \"node server.js\""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.0",
+    "dart-sass": "^1.17.2",
+    "extract-loader": "^1.0.2",
+    "fibers": "^4.0.0",
+    "file-loader": "^1.1.11",
+    "sass-loader": "^7.1.0",
+    "webpack": "^3.12.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^2.11.5"
+  },
+  "dependencies": {
+    "@material/button": "^1.0.1",
+    "@material/ripple": "^1.0.1",
+    "@material/textfield": "^1.1.1",
+    "concurrently": "^5.0.0",
+    "material-components-web": "^4.0.0",
+    "moment": "^2.24.0"
+  }
+}

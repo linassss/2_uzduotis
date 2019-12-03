@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Komentarai</title>  
+<link rel="stylesheet" href="bundle-home.css">
+</head>
+
+<body id="komentaru_lapas">
+<h2 id="pavadinimas">Komentarų skiltis</h2>
+<div id="komentarai">
+
+</div>
+
+<script>
+
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+
+    Object.keys(myObj).forEach((key) => {
+      var vardas = document.createElement("div");
+      vardas.setAttribute("id", "c_vardas");
+      var data = document.createElement("div");
+      data.setAttribute("id", "c_data");      
+      var komentaras = document.createElement("div");
+      komentaras.setAttribute("id", "c_komentaras");
+      vardas.innerHTML = myObj[key].username;
+      data.innerHTML = myObj[key].date;
+      komentaras.innerHTML = myObj[key].comments;
+      tarpas = document.createElement("br");
+      document.getElementById("komentarai").appendChild(vardas);
+      document.getElementById("komentarai").appendChild(data);
+      document.getElementById("komentarai").appendChild(komentaras);
+      document.getElementById("komentarai").appendChild(tarpas);
+    });
+  }
+};
+xmlhttp.open("GET", "feedbacks.json", true);
+xmlhttp.send();
+
+</script>
+
+</body>
+</html>

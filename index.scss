@@ -1,0 +1,63 @@
+@import "./common";
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+
+.header {
+  display: block;
+  color: SlateBlue;
+  text-align: center;
+  margin-left: auto;
+  width: 100%;
+}
+.text.h {
+  display: inline-flex;
+  margin-left: auto;
+  width: 50%;
+  text-align: center;
+}
+.forma {
+  margin: auto;
+  width: 610px;
+}
+.pav {
+  display: inline-flex;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.username {
+  display: inline-flex;
+  width: 300px;
+  margin: 10px auto;
+  float: left;
+}
+
+.email {
+  display: inline-flex;
+  width: 300px;
+  margin-left: 6px;
+  margin: 10px auto;
+  float: right;
+}
+
+.comments {
+  display: block;
+  width: 610px;
+  height: 200px;
+  margin: auto;
+  resize: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  margin-right: auto;
+  margin-left: 313px;
+  margin-top: 10px;
+}
+
+.button-container button {
+  margin: 3px;
+}

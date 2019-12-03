@@ -1,0 +1,70 @@
+@import "./common";
+@import "@material/textfield/mdc-text-field";
+@import "@material/button/mdc-button";
+
+.home {
+  display: block;
+  color: SlateBlue;
+  text-align: center;
+  margin-left: auto;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.buttons {
+  display: block;
+  text-align: center;
+}
+
+#pavadinimas {
+  font-family: Roboto, sans-serif;
+  background-color: rgba(105, 90, 205, 0.333);
+  text-align: center;
+  padding: 10px;
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 40px;
+  width: 390px
+}
+
+#c_vardas {
+  font-weight: bold;
+  background-color: rgba(105, 90, 205, 0.250);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  width: 290px;
+  margin-left: 30px;
+  margin-right: 0px;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+#c_data {
+  background-color: rgba(105, 90, 205, 0.250);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  width: 100px;
+  margin-left: 0px;
+  margin-right: auto;
+  display: inline-flex;
+}
+
+#c_komentaras {
+  background-color: rgba(105, 90, 205, 0.250);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 10px;
+  width: 400px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: auto;
+  display: block;
+  word-wrap: break-word;
+}
+
+#komentaru_lapas {
+  background-color: rgba(128, 128, 128, 0.150);
+}
